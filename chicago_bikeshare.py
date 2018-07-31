@@ -124,8 +124,9 @@ def count_gender(data_list):
          Returns a list with [count_male, counf_female] (e.g., [10, 15] means 10 Males, 15 Females)
 
     """
-    return [len([x[6] for x in data_list if x[6].lower() == 'male']), len([x[6]
-        for x in data_list if 'female' in x[6].lower()])]
+    count_male = len([x[6] for x in data_list if x[6].lower() == 'male'])
+    count_female = len([x[6] for x in data_list if 'female' in x[6].lower()])
+    return [count_male, count_female]
 
 print("\nTASK 5: Printing result of count_gender")
 print(count_gender(data_list))

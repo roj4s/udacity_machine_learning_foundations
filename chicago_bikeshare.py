@@ -245,11 +245,11 @@ sys.setrecursionlimit(2000)
 quicksort(trip_duration_list, 0, len(trip_duration_list) -1 )
 min_trip = trip_duration_list[0]
 max_trip = trip_duration_list[-1]
-_sum = 0
+sum_of_all_values = 0
 for x in trip_duration_list:
-    _sum += x
+    sum_of_all_values += x
 
-mean_trip = _sum/len(trip_duration_list)
+mean_trip = sum_of_all_values/len(trip_duration_list)
 median_trip = trip_duration_list[int(len(trip_duration_list)/2)]
 
 print("\nTASK 9: Printing the min, max, mean and median")
